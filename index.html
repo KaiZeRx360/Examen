@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Películas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Películas</h1>
+        <form id="pelicula-form">
+            <input type="hidden" id="pelicula-id">
+            <div class="form-group">
+                <label for="titulo">Nombre de la película:</label>
+                <input type="text" id="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="director">Director:</label>
+                <input type="text" id="director" required>
+            </div>
+            <div class="form-group">
+                <label for="anio">Año de salida:</label>
+                <input type="number" id="anio" required>
+            </div>
+            <div class="form-group">
+                <label for="imagen">URL de la imagen:</label>
+                <input type="text" id="imagen" required>
+            </div>
+            <button type="submit" class="btn">Guardar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Título</th>
+                    <th>Director</th>
+                    <th>Año</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="catalogo"></tbody>
+        </table>
+    </div>
+    <script src="catalogo.js"></script>
+</body>
+</html>
